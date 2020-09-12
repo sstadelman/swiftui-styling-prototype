@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,30 @@
 		F6B9F904250C4151002C8B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F903250C4151002C8B6A /* ContentView.swift */; };
 		F6B9F906250C4151002C8B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B9F905250C4151002C8B6A /* Assets.xcassets */; };
 		F6B9F909250C4151002C8B6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B9F908250C4151002C8B6A /* Preview Assets.xcassets */; };
+		F6B9F91E250C43CC002C8B6A /* FioriSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */; };
+		F6B9F91F250C43CC002C8B6A /* FioriSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F6B9F923250C4569002C8B6A /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F922250C4569002C8B6A /* ContactList.swift */; };
+		F6B9F926250C45BC002C8B6A /* AcmePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F925250C45BC002C8B6A /* AcmePalette.swift */; };
+		F6B9F928250C45E5002C8B6A /* AcmeTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F927250C45E5002C8B6A /* AcmeTags.swift */; };
+		F6B9F92A250C4673002C8B6A /* PersonFloorplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F929250C4673002C8B6A /* PersonFloorplan.swift */; };
+		F6B9F92F250C474A002C8B6A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F92C250C474A002C8B6A /* Person.swift */; };
+		F6B9F930250C474A002C8B6A /* TripPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F92D250C474A002C8B6A /* TripPin.swift */; };
+		F6B9F931250C474A002C8B6A /* PlanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F92E250C474A002C8B6A /* PlanItem.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6B9F914250C422A002C8B6A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6B9F91F250C43CC002C8B6A /* FioriSwiftUI in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F6B9F8FE250C4151002C8B6A /* SwiftUIStylingProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStylingProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +43,13 @@
 		F6B9F905250C4151002C8B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6B9F908250C4151002C8B6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6B9F90A250C4151002C8B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B9F922250C4569002C8B6A /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		F6B9F925250C45BC002C8B6A /* AcmePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmePalette.swift; sourceTree = "<group>"; };
+		F6B9F927250C45E5002C8B6A /* AcmeTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeTags.swift; sourceTree = "<group>"; };
+		F6B9F929250C4673002C8B6A /* PersonFloorplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonFloorplan.swift; sourceTree = "<group>"; };
+		F6B9F92C250C474A002C8B6A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F6B9F92D250C474A002C8B6A /* TripPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPin.swift; sourceTree = "<group>"; };
+		F6B9F92E250C474A002C8B6A /* PlanItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B9F91E250C43CC002C8B6A /* FioriSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +69,7 @@
 			children = (
 				F6B9F900250C4151002C8B6A /* SwiftUIStylingProto */,
 				F6B9F8FF250C4151002C8B6A /* Products */,
+				F6B9F915250C4257002C8B6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +84,12 @@
 		F6B9F900250C4151002C8B6A /* SwiftUIStylingProto */ = {
 			isa = PBXGroup;
 			children = (
+				F6B9F92B250C474A002C8B6A /* TripPinSampleData */,
+				F6B9F924250C45A2002C8B6A /* CustomerModifiers */,
 				F6B9F901250C4151002C8B6A /* SwiftUIStylingProtoApp.swift */,
 				F6B9F903250C4151002C8B6A /* ContentView.swift */,
+				F6B9F922250C4569002C8B6A /* ContactList.swift */,
+				F6B9F929250C4673002C8B6A /* PersonFloorplan.swift */,
 				F6B9F905250C4151002C8B6A /* Assets.xcassets */,
 				F6B9F90A250C4151002C8B6A /* Info.plist */,
 				F6B9F907250C4151002C8B6A /* Preview Content */,
@@ -69,6 +105,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F6B9F915250C4257002C8B6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6B9F924250C45A2002C8B6A /* CustomerModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F6B9F925250C45BC002C8B6A /* AcmePalette.swift */,
+				F6B9F927250C45E5002C8B6A /* AcmeTags.swift */,
+			);
+			path = CustomerModifiers;
+			sourceTree = "<group>";
+		};
+		F6B9F92B250C474A002C8B6A /* TripPinSampleData */ = {
+			isa = PBXGroup;
+			children = (
+				F6B9F92C250C474A002C8B6A /* Person.swift */,
+				F6B9F92D250C474A002C8B6A /* TripPin.swift */,
+				F6B9F92E250C474A002C8B6A /* PlanItem.swift */,
+			);
+			path = TripPinSampleData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,12 +141,16 @@
 				F6B9F8FA250C4151002C8B6A /* Sources */,
 				F6B9F8FB250C4151002C8B6A /* Frameworks */,
 				F6B9F8FC250C4151002C8B6A /* Resources */,
+				F6B9F914250C422A002C8B6A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftUIStylingProto;
+			packageProductDependencies = (
+				F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */,
+			);
 			productName = SwiftUIStylingProto;
 			productReference = F6B9F8FE250C4151002C8B6A /* SwiftUIStylingProto.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +178,9 @@
 				Base,
 			);
 			mainGroup = F6B9F8F5250C4151002C8B6A;
+			packageReferences = (
+				F6B9F91C250C43CC002C8B6A /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */,
+			);
 			productRefGroup = F6B9F8FF250C4151002C8B6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B9F923250C4569002C8B6A /* ContactList.swift in Sources */,
+				F6B9F928250C45E5002C8B6A /* AcmeTags.swift in Sources */,
+				F6B9F926250C45BC002C8B6A /* AcmePalette.swift in Sources */,
 				F6B9F904250C4151002C8B6A /* ContentView.swift in Sources */,
+				F6B9F92F250C474A002C8B6A /* Person.swift in Sources */,
+				F6B9F92A250C4673002C8B6A /* PersonFloorplan.swift in Sources */,
+				F6B9F931250C474A002C8B6A /* PlanItem.swift in Sources */,
+				F6B9F930250C474A002C8B6A /* TripPin.swift in Sources */,
 				F6B9F902250C4151002C8B6A /* SwiftUIStylingProtoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6B9F91C250C43CC002C8B6A /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SAP/cloud-sdk-ios-fiori.git";
+			requirement = {
+				branch = generated_components;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6B9F91C250C43CC002C8B6A /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */;
+			productName = FioriSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6B9F8F6250C4151002C8B6A /* Project object */;
 }

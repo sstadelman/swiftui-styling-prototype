@@ -9,7 +9,7 @@
 import SwiftUI
 import FioriSwiftUICore
 
-struct ProfileDetailFloorplan<Header: View, Content: View>: View {
+struct PersonFloorplan<Header: View, Content: View>: View {
     private let header: Header
     private let content: Content
 
@@ -35,6 +35,6 @@ struct ProfileDetailFloorplan<Header: View, Content: View>: View {
 
 struct ProfileDetailFloorplan_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileDetailFloorplan(header: { EmptyView() }, content: { EmptyView() })
+        PersonFloorplan(header: { EmptyView() }, content: { EmptyView() })
     }
 }

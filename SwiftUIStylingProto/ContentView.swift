@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import FioriSwiftUICore
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                NavigationLink(
+                destination: ContactList()) {
+                    Text("Contact List")
+                }
+            }
+            .navigationBarTitle("Acme Phonebook")
+            .listStyle(SidebarListStyle())
+        }
+        .modifier(AcmeBrandStyle())
     }
 }
 
