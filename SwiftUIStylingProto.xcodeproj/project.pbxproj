@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B02433C25131B7800C57865 /* API_Warehouse_TaskStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02432D25131B7800C57865 /* API_Warehouse_TaskStaticResolver.swift */; };
+		1B02433D25131B7800C57865 /* API_Warehouse_TaskFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02432E25131B7800C57865 /* API_Warehouse_TaskFactory.swift */; };
+		1B02433E25131B7800C57865 /* API_Warehouse_TaskMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02432F25131B7800C57865 /* API_Warehouse_TaskMetadataText.swift */; };
+		1B02433F25131B7800C57865 /* API_Warehouse_TaskMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433025131B7800C57865 /* API_Warehouse_TaskMetadataParser.swift */; };
+		1B02434025131B7800C57865 /* API_Warehouse_TaskMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433125131B7800C57865 /* API_Warehouse_TaskMetadataChanges.swift */; };
+		1B02434125131B7800C57865 /* API_Warehouse_TaskMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433325131B7800C57865 /* API_Warehouse_TaskMetadata.swift */; };
+		1B02434225131B7800C57865 /* API_Warehouse_Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433425131B7800C57865 /* API_Warehouse_Task.swift */; };
+		1B02434325131B7800C57865 /* WarehouseOrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433525131B7800C57865 /* WarehouseOrderType.swift */; };
+		1B02434425131B7800C57865 /* DummyFunctionImportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433625131B7800C57865 /* DummyFunctionImportResult.swift */; };
+		1B02434525131B7800C57865 /* WarehouseTaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433725131B7800C57865 /* WarehouseTaskType.swift */; };
+		1B02434625131B7800C57865 /* WarehouseTaskExceptionCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02433825131B7800C57865 /* WarehouseTaskExceptionCodeType.swift */; };
+		1B02434825131BBE00C57865 /* API_Warehouse_Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02434725131BBE00C57865 /* API_Warehouse_Task+Extensions.swift */; };
+		1B02434A25131D3A00C57865 /* WarehouseTaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02434925131D3A00C57865 /* WarehouseTaskList.swift */; };
+		1BA44981250D61DA00B61EB1 /* SAPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA4497F250D61D900B61EB1 /* SAPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BA44982250D61DA00B61EB1 /* SAPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA44980250D61D900B61EB1 /* SAPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BA449B1250FE71200B61EB1 /* ModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA449B0250FE71100B61EB1 /* ModelCache.swift */; };
+		1BF103DF2518702400F2912C /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF103DD2518702400F2912C /* SAPOData.xcframework */; };
+		1BF103E02518702400F2912C /* SAPOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF103DD2518702400F2912C /* SAPOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BF103E12518702400F2912C /* SAPOfflineOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */; };
+		1BF103E22518702400F2912C /* SAPOfflineOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BF103E52518712300F2912C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF103E42518712300F2912C /* Person.swift */; };
+		1BF103E72518712C00F2912C /* PlanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF103E62518712C00F2912C /* PlanItem.swift */; };
+		1BF103E92518713500F2912C /* TripPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF103E82518713500F2912C /* TripPin.swift */; };
 		F6B9F902250C4151002C8B6A /* SwiftUIStylingProtoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F901250C4151002C8B6A /* SwiftUIStylingProtoApp.swift */; };
 		F6B9F904250C4151002C8B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F903250C4151002C8B6A /* ContentView.swift */; };
 		F6B9F906250C4151002C8B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B9F905250C4151002C8B6A /* Assets.xcassets */; };
 		F6B9F909250C4151002C8B6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B9F908250C4151002C8B6A /* Preview Assets.xcassets */; };
-		F6B9F91E250C43CC002C8B6A /* FioriSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */; };
-		F6B9F91F250C43CC002C8B6A /* FioriSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F6B9F923250C4569002C8B6A /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F922250C4569002C8B6A /* ContactList.swift */; };
 		F6B9F926250C45BC002C8B6A /* AcmePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F925250C45BC002C8B6A /* AcmePalette.swift */; };
 		F6B9F928250C45E5002C8B6A /* AcmeTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F927250C45E5002C8B6A /* AcmeTags.swift */; };
 		F6B9F92A250C4673002C8B6A /* PersonFloorplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F929250C4673002C8B6A /* PersonFloorplan.swift */; };
-		F6B9F92F250C474A002C8B6A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F92C250C474A002C8B6A /* Person.swift */; };
-		F6B9F930250C474A002C8B6A /* TripPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F92D250C474A002C8B6A /* TripPin.swift */; };
-		F6B9F931250C474A002C8B6A /* PlanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F92E250C474A002C8B6A /* PlanItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +47,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F6B9F91F250C43CC002C8B6A /* FioriSwiftUI in Embed Frameworks */,
+				1BA44981250D61DA00B61EB1 /* SAPCommon.xcframework in Embed Frameworks */,
+				1BA44982250D61DA00B61EB1 /* SAPFoundation.xcframework in Embed Frameworks */,
+				1BF103E22518702400F2912C /* SAPOfflineOData.xcframework in Embed Frameworks */,
+				1BF103E02518702400F2912C /* SAPOData.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +58,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B02432D25131B7800C57865 /* API_Warehouse_TaskStaticResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_TaskStaticResolver.swift; sourceTree = "<group>"; };
+		1B02432E25131B7800C57865 /* API_Warehouse_TaskFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_TaskFactory.swift; sourceTree = "<group>"; };
+		1B02432F25131B7800C57865 /* API_Warehouse_TaskMetadataText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_TaskMetadataText.swift; sourceTree = "<group>"; };
+		1B02433025131B7800C57865 /* API_Warehouse_TaskMetadataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_TaskMetadataParser.swift; sourceTree = "<group>"; };
+		1B02433125131B7800C57865 /* API_Warehouse_TaskMetadataChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_TaskMetadataChanges.swift; sourceTree = "<group>"; };
+		1B02433325131B7800C57865 /* API_Warehouse_TaskMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_TaskMetadata.swift; sourceTree = "<group>"; };
+		1B02433425131B7800C57865 /* API_Warehouse_Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Warehouse_Task.swift; sourceTree = "<group>"; };
+		1B02433525131B7800C57865 /* WarehouseOrderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseOrderType.swift; sourceTree = "<group>"; };
+		1B02433625131B7800C57865 /* DummyFunctionImportResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyFunctionImportResult.swift; sourceTree = "<group>"; };
+		1B02433725131B7800C57865 /* WarehouseTaskType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseTaskType.swift; sourceTree = "<group>"; };
+		1B02433825131B7800C57865 /* WarehouseTaskExceptionCodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseTaskExceptionCodeType.swift; sourceTree = "<group>"; };
+		1B02434725131BBE00C57865 /* API_Warehouse_Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API_Warehouse_Task+Extensions.swift"; sourceTree = "<group>"; };
+		1B02434925131D3A00C57865 /* WarehouseTaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseTaskList.swift; sourceTree = "<group>"; };
+		1BA4497F250D61D900B61EB1 /* SAPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPCommon.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPCommon.xcframework"; sourceTree = "<group>"; };
+		1BA44980250D61D900B61EB1 /* SAPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPFoundation.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPFoundation.xcframework"; sourceTree = "<group>"; };
+		1BA449B0250FE71100B61EB1 /* ModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCache.swift; sourceTree = "<group>"; };
+		1BF103DD2518702400F2912C /* SAPOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPOData.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPOData.xcframework"; sourceTree = "<group>"; };
+		1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPOfflineOData.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPOfflineOData.xcframework"; sourceTree = "<group>"; };
+		1BF103E42518712300F2912C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1BF103E62518712C00F2912C /* PlanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItem.swift; sourceTree = "<group>"; };
+		1BF103E82518713500F2912C /* TripPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPin.swift; sourceTree = "<group>"; };
 		F6B9F8FE250C4151002C8B6A /* SwiftUIStylingProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStylingProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B9F901250C4151002C8B6A /* SwiftUIStylingProtoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStylingProtoApp.swift; sourceTree = "<group>"; };
 		F6B9F903250C4151002C8B6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,9 +89,6 @@
 		F6B9F925250C45BC002C8B6A /* AcmePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmePalette.swift; sourceTree = "<group>"; };
 		F6B9F927250C45E5002C8B6A /* AcmeTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeTags.swift; sourceTree = "<group>"; };
 		F6B9F929250C4673002C8B6A /* PersonFloorplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonFloorplan.swift; sourceTree = "<group>"; };
-		F6B9F92C250C474A002C8B6A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		F6B9F92D250C474A002C8B6A /* TripPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPin.swift; sourceTree = "<group>"; };
-		F6B9F92E250C474A002C8B6A /* PlanItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +96,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B9F91E250C43CC002C8B6A /* FioriSwiftUI in Frameworks */,
+				1BF103E12518702400F2912C /* SAPOfflineOData.xcframework in Frameworks */,
+				1BF103DF2518702400F2912C /* SAPOData.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B02432725131B7800C57865 /* API_WAREHOUSE_ORDER_TASK */ = {
+			isa = PBXGroup;
+			children = (
+				1B02432B25131B7800C57865 /* proxies */,
+				1B02434725131BBE00C57865 /* API_Warehouse_Task+Extensions.swift */,
+			);
+			path = API_WAREHOUSE_ORDER_TASK;
+			sourceTree = "<group>";
+		};
+		1B02432B25131B7800C57865 /* proxies */ = {
+			isa = PBXGroup;
+			children = (
+				1B02432C25131B7800C57865 /* internal */,
+				1B02433225131B7800C57865 /* public */,
+			);
+			path = proxies;
+			sourceTree = "<group>";
+		};
+		1B02432C25131B7800C57865 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				1B02432D25131B7800C57865 /* API_Warehouse_TaskStaticResolver.swift */,
+				1B02432E25131B7800C57865 /* API_Warehouse_TaskFactory.swift */,
+				1B02432F25131B7800C57865 /* API_Warehouse_TaskMetadataText.swift */,
+				1B02433025131B7800C57865 /* API_Warehouse_TaskMetadataParser.swift */,
+				1B02433125131B7800C57865 /* API_Warehouse_TaskMetadataChanges.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		1B02433225131B7800C57865 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				1B02433325131B7800C57865 /* API_Warehouse_TaskMetadata.swift */,
+				1B02433425131B7800C57865 /* API_Warehouse_Task.swift */,
+				1B02433525131B7800C57865 /* WarehouseOrderType.swift */,
+				1B02433625131B7800C57865 /* DummyFunctionImportResult.swift */,
+				1B02433725131B7800C57865 /* WarehouseTaskType.swift */,
+				1B02433825131B7800C57865 /* WarehouseTaskExceptionCodeType.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		1BF103E32518710E00F2912C /* TripPinSampleData */ = {
+			isa = PBXGroup;
+			children = (
+				1BF103E42518712300F2912C /* Person.swift */,
+				1BF103E62518712C00F2912C /* PlanItem.swift */,
+				1BF103E82518713500F2912C /* TripPin.swift */,
+			);
+			path = TripPinSampleData;
+			sourceTree = "<group>";
+		};
 		F6B9F8F5250C4151002C8B6A = {
 			isa = PBXGroup;
 			children = (
+				1BA4497F250D61D900B61EB1 /* SAPCommon.xcframework */,
+				1BA44980250D61D900B61EB1 /* SAPFoundation.xcframework */,
 				F6B9F900250C4151002C8B6A /* SwiftUIStylingProto */,
 				F6B9F8FF250C4151002C8B6A /* Products */,
 				F6B9F915250C4257002C8B6A /* Frameworks */,
@@ -84,11 +179,14 @@
 		F6B9F900250C4151002C8B6A /* SwiftUIStylingProto */ = {
 			isa = PBXGroup;
 			children = (
-				F6B9F92B250C474A002C8B6A /* TripPinSampleData */,
+				1BF103E32518710E00F2912C /* TripPinSampleData */,
+				1B02432725131B7800C57865 /* API_WAREHOUSE_ORDER_TASK */,
 				F6B9F924250C45A2002C8B6A /* CustomerModifiers */,
 				F6B9F901250C4151002C8B6A /* SwiftUIStylingProtoApp.swift */,
+				1BA449B0250FE71100B61EB1 /* ModelCache.swift */,
 				F6B9F903250C4151002C8B6A /* ContentView.swift */,
 				F6B9F922250C4569002C8B6A /* ContactList.swift */,
+				1B02434925131D3A00C57865 /* WarehouseTaskList.swift */,
 				F6B9F929250C4673002C8B6A /* PersonFloorplan.swift */,
 				F6B9F905250C4151002C8B6A /* Assets.xcassets */,
 				F6B9F90A250C4151002C8B6A /* Info.plist */,
@@ -108,6 +206,8 @@
 		F6B9F915250C4257002C8B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BF103DD2518702400F2912C /* SAPOData.xcframework */,
+				1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,16 +219,6 @@
 				F6B9F927250C45E5002C8B6A /* AcmeTags.swift */,
 			);
 			path = CustomerModifiers;
-			sourceTree = "<group>";
-		};
-		F6B9F92B250C474A002C8B6A /* TripPinSampleData */ = {
-			isa = PBXGroup;
-			children = (
-				F6B9F92C250C474A002C8B6A /* Person.swift */,
-				F6B9F92D250C474A002C8B6A /* TripPin.swift */,
-				F6B9F92E250C474A002C8B6A /* PlanItem.swift */,
-			);
-			path = TripPinSampleData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +239,6 @@
 			);
 			name = SwiftUIStylingProto;
 			packageProductDependencies = (
-				F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */,
 			);
 			productName = SwiftUIStylingProto;
 			productReference = F6B9F8FE250C4151002C8B6A /* SwiftUIStylingProto.app */;
@@ -209,12 +298,26 @@
 			files = (
 				F6B9F923250C4569002C8B6A /* ContactList.swift in Sources */,
 				F6B9F928250C45E5002C8B6A /* AcmeTags.swift in Sources */,
+				1B02433E25131B7800C57865 /* API_Warehouse_TaskMetadataText.swift in Sources */,
+				1BF103E72518712C00F2912C /* PlanItem.swift in Sources */,
 				F6B9F926250C45BC002C8B6A /* AcmePalette.swift in Sources */,
+				1B02434325131B7800C57865 /* WarehouseOrderType.swift in Sources */,
+				1B02434225131B7800C57865 /* API_Warehouse_Task.swift in Sources */,
+				1B02433D25131B7800C57865 /* API_Warehouse_TaskFactory.swift in Sources */,
+				1B02434625131B7800C57865 /* WarehouseTaskExceptionCodeType.swift in Sources */,
 				F6B9F904250C4151002C8B6A /* ContentView.swift in Sources */,
-				F6B9F92F250C474A002C8B6A /* Person.swift in Sources */,
+				1B02433F25131B7800C57865 /* API_Warehouse_TaskMetadataParser.swift in Sources */,
+				1B02433C25131B7800C57865 /* API_Warehouse_TaskStaticResolver.swift in Sources */,
+				1BF103E92518713500F2912C /* TripPin.swift in Sources */,
+				1B02434825131BBE00C57865 /* API_Warehouse_Task+Extensions.swift in Sources */,
+				1B02434425131B7800C57865 /* DummyFunctionImportResult.swift in Sources */,
+				1B02434525131B7800C57865 /* WarehouseTaskType.swift in Sources */,
 				F6B9F92A250C4673002C8B6A /* PersonFloorplan.swift in Sources */,
-				F6B9F931250C474A002C8B6A /* PlanItem.swift in Sources */,
-				F6B9F930250C474A002C8B6A /* TripPin.swift in Sources */,
+				1B02434A25131D3A00C57865 /* WarehouseTaskList.swift in Sources */,
+				1B02434125131B7800C57865 /* API_Warehouse_TaskMetadata.swift in Sources */,
+				1BA449B1250FE71200B61EB1 /* ModelCache.swift in Sources */,
+				1BF103E52518712300F2912C /* Person.swift in Sources */,
+				1B02434025131B7800C57865 /* API_Warehouse_TaskMetadataChanges.swift in Sources */,
 				F6B9F902250C4151002C8B6A /* SwiftUIStylingProtoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +444,7 @@
 		F6B9F90E250C4151002C8B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +467,7 @@
 		F6B9F90F250C4151002C8B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,14 +520,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F6B9F91D250C43CC002C8B6A /* FioriSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6B9F91C250C43CC002C8B6A /* XCRemoteSwiftPackageReference "cloud-sdk-ios-fiori" */;
-			productName = FioriSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6B9F8F6250C4151002C8B6A /* Project object */;
 }

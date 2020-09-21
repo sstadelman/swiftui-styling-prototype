@@ -1,9 +1,8 @@
 //
 //  Person.swift
-//  Examples
+//  SwiftUIStylingProto
 //
-//  Created by Stan Stadelman on 9/4/20.
-//  Copyright © 2020 SAP. All rights reserved.
+//  Created by Stadelman, Stan on 9/20/20.
 //
 
 import Foundation

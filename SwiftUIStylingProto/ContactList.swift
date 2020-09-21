@@ -47,3 +47,4 @@ struct ContactList_Previews: PreviewProvider {
         ContactList()
     }
 }
+

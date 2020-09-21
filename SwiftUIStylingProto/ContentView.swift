@@ -9,6 +9,7 @@ import SwiftUI
 import FioriSwiftUICore
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             List {
@@ -16,8 +17,16 @@ struct ContentView: View {
                 destination: ContactList()) {
                     Text("Contact List")
                 }
+//                NavigationLink(
+//                destination: EquipmentList()) {
+//                    Text("OData Contact List")
+//                }
+                NavigationLink(
+                destination: WarehouseTaskList()) {
+                    Text("OData Warehouse Task List")
+                }
             }
-            .navigationBarTitle("Acme Phonebook")
+            .navigationBarTitle("Acme S/4 Services")
             .listStyle(SidebarListStyle())
         }
         .modifier(AcmeBrandStyle())
