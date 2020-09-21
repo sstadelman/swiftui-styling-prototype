@@ -1,11 +1,10 @@
-//# xsc 1.9.11.12
+//# xsc 20.3.0-6b3997-20200324
 
 import Foundation
-import cloud_sdk_ios_odata
+import SAPOData
 
 internal class API_Warehouse_TaskMetadataChanges {
     static func merge(metadata: CSDLDocument) -> Void {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:2402:20
         metadata.hasGeneratedProxies = true
         API_Warehouse_TaskMetadata.document = metadata
         API_Warehouse_TaskMetadataChanges.merge1(metadata: metadata)
@@ -13,7 +12,6 @@ internal class API_Warehouse_TaskMetadataChanges {
     }
 
     private static func merge1(metadata: CSDLDocument) -> Void {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:2295:21
         Ignore.valueOf_any(metadata)
         if !API_Warehouse_TaskMetadata.ComplexTypes.dummyFunctionImportResult.isRemoved {
             API_Warehouse_TaskMetadata.ComplexTypes.dummyFunctionImportResult = metadata.complexType(withName: "cds_api_warehouse_order_task.DummyFunctionImportResult")
@@ -57,9 +55,6 @@ internal class API_Warehouse_TaskMetadataChanges {
         if !API_Warehouse_TaskMetadata.ActionImports.unassignWarehouseOrder.isRemoved {
             API_Warehouse_TaskMetadata.ActionImports.unassignWarehouseOrder = metadata.dataMethod(withName: "UnassignWarehouseOrder")
         }
-        API_Warehouse_Task.warehouseOrder = API_Warehouse_TaskMetadata.EntitySets.warehouseOrder
-        API_Warehouse_Task.warehouseTask = API_Warehouse_TaskMetadata.EntitySets.warehouseTask
-        API_Warehouse_Task.warehouseTaskExceptionCode = API_Warehouse_TaskMetadata.EntitySets.warehouseTaskExceptionCode
         if !DummyFunctionImportResult.isInvalid.isRemoved {
             DummyFunctionImportResult.isInvalid = API_Warehouse_TaskMetadata.ComplexTypes.dummyFunctionImportResult.property(withName: "IsInvalid")
         }

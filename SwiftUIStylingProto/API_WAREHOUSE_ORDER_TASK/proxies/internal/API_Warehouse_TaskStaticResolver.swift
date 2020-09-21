@@ -1,16 +1,14 @@
-//# xsc 1.9.11.12
+//# xsc 20.3.0-6b3997-20200324
 
 import Foundation
-import cloud_sdk_ios_odata
+import SAPOData
 
 internal class API_Warehouse_TaskStaticResolver {
     static func resolve() -> Void {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:2517:20
         API_Warehouse_TaskStaticResolver.resolve1()
     }
 
     private static func resolve1() -> Void {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:2414:21
         Ignore.valueOf_any(API_Warehouse_TaskMetadata.ComplexTypes.dummyFunctionImportResult)
         Ignore.valueOf_any(API_Warehouse_TaskMetadata.EntityTypes.warehouseOrderType)
         Ignore.valueOf_any(API_Warehouse_TaskMetadata.EntityTypes.warehouseTaskExceptionCodeType)

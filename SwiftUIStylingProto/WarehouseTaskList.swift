@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 import FioriSwiftUICore
-import cloud_sdk_ios_odata
+import SAPOData
 
 struct WarehouseTaskList: View {
     
@@ -17,7 +17,7 @@ struct WarehouseTaskList: View {
     
     init() {
         let query = DataQuery()
-            .from(API_Warehouse_Task.warehouseTask)
+            .from(API_Warehouse_TaskMetadata.EntitySets.warehouseTask)
             .selectAll()
         
         modelCache.provider.resultPublisher(for: query)

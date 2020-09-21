@@ -1,7 +1,7 @@
-//# xsc 1.9.11.12
+//# xsc 20.3.0-6b3997-20200324
 
 import Foundation
-import cloud_sdk_ios_odata
+import SAPOData
 
 open class WarehouseOrderType: EntityValue {
     public required init(from decoder: Decoder) throws {
@@ -31,17 +31,14 @@ open class WarehouseOrderType: EntityValue {
     private static var toWarehouseTask_: Property = API_Warehouse_TaskMetadata.EntityTypes.warehouseOrderType.property(withName: "to_WarehouseTask")
 
     public init(withDefaults: Bool = true) {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:87:5
         super.init(withDefaults: withDefaults, type: API_Warehouse_TaskMetadata.EntityTypes.warehouseOrderType)
     }
 
     open class func array(from: EntityValueList) -> Array<WarehouseOrderType> {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:82:12
         return ArrayConverter.convert(from.toArray(), Array<WarehouseOrderType>())
     }
 
     open func copy() -> WarehouseOrderType {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:71:5
         return CastRequired<WarehouseOrderType>.from(self.copyEntity())
     }
 
@@ -50,7 +47,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:102:36
                 return WarehouseOrderType.creationDateTime_
             }
         }
@@ -58,7 +54,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:102:36
                 WarehouseOrderType.creationDateTime_ = value
             }
         }
@@ -66,11 +61,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var creationDateTime: GlobalDateTime? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:174:5
             return GlobalDateTime.castOptional(self.dataValue(for: WarehouseOrderType.creationDateTime))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:179:5
             self.setDataValue(for: WarehouseOrderType.creationDateTime, to: value)
         }
     }
@@ -80,7 +73,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:107:36
                 return WarehouseOrderType.executingResource_
             }
         }
@@ -88,7 +80,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:107:36
                 WarehouseOrderType.executingResource_ = value
             }
         }
@@ -96,24 +87,20 @@ open class WarehouseOrderType: EntityValue {
 
     open var executingResource: String? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:239:5
             return StringValue.optional(self.dataValue(for: WarehouseOrderType.executingResource))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:244:5
             self.setDataValue(for: WarehouseOrderType.executingResource, to: StringValue.of(optional: value))
         }
     }
 
     override open var isProxy: Bool {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:59:5
             return true
         }
     }
 
     open class func key(warehouse: String, warehouseOrder: String) -> EntityKey {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:76:12
         return EntityKey().with(name: "Warehouse", value: StringValue.of(warehouse)).with(name: "WarehouseOrder", value: StringValue.of(warehouseOrder))
     }
 
@@ -122,7 +109,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:105:36
                 return WarehouseOrderType.lastChangeDateTime_
             }
         }
@@ -130,7 +116,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:105:36
                 WarehouseOrderType.lastChangeDateTime_ = value
             }
         }
@@ -138,18 +123,15 @@ open class WarehouseOrderType: EntityValue {
 
     open var lastChangeDateTime: GlobalDateTime? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:213:5
             return GlobalDateTime.castOptional(self.dataValue(for: WarehouseOrderType.lastChangeDateTime))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:218:5
             self.setDataValue(for: WarehouseOrderType.lastChangeDateTime, to: value)
         }
     }
 
     open var old: WarehouseOrderType {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:66:5
             return CastRequired<WarehouseOrderType>.from(self.oldEntity)
         }
     }
@@ -159,7 +141,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:108:36
                 return WarehouseOrderType.toWarehouseTask_
             }
         }
@@ -167,7 +148,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:108:36
                 WarehouseOrderType.toWarehouseTask_ = value
             }
         }
@@ -175,11 +155,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var toWarehouseTask: Array<WarehouseTaskType> {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:252:5
             return ArrayConverter.convert(EntityValueList.castRequired(self.dataValue(for: WarehouseOrderType.toWarehouseTask)).toArray(), Array<WarehouseTaskType>())
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:257:5
             WarehouseOrderType.toWarehouseTask.setEntityList(in: self, to: EntityValueList.fromArray(ArrayConverter.convert(value, Array<EntityValue>())))
         }
     }
@@ -189,7 +167,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:98:36
                 return WarehouseOrderType.warehouse_
             }
         }
@@ -197,7 +174,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:98:36
                 WarehouseOrderType.warehouse_ = value
             }
         }
@@ -205,11 +181,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var warehouse: String {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:122:5
             return StringValue.unwrap(self.dataValue(for: WarehouseOrderType.warehouse))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:127:5
             self.setDataValue(for: WarehouseOrderType.warehouse, to: StringValue.of(value))
         }
     }
@@ -219,7 +193,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:99:36
                 return WarehouseOrderType.warehouseOrder_
             }
         }
@@ -227,7 +200,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:99:36
                 WarehouseOrderType.warehouseOrder_ = value
             }
         }
@@ -235,11 +207,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var warehouseOrder: String {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:135:5
             return StringValue.unwrap(self.dataValue(for: WarehouseOrderType.warehouseOrder))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:140:5
             self.setDataValue(for: WarehouseOrderType.warehouseOrder, to: StringValue.of(value))
         }
     }
@@ -249,7 +219,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:103:36
                 return WarehouseOrderType.warehouseOrderStartDateTime_
             }
         }
@@ -257,7 +226,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:103:36
                 WarehouseOrderType.warehouseOrderStartDateTime_ = value
             }
         }
@@ -265,11 +233,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var warehouseOrderStartDateTime: GlobalDateTime? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:187:5
             return GlobalDateTime.castOptional(self.dataValue(for: WarehouseOrderType.warehouseOrderStartDateTime))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:192:5
             self.setDataValue(for: WarehouseOrderType.warehouseOrderStartDateTime, to: value)
         }
     }
@@ -279,7 +245,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:100:36
                 return WarehouseOrderType.warehouseOrderStatus_
             }
         }
@@ -287,7 +252,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:100:36
                 WarehouseOrderType.warehouseOrderStatus_ = value
             }
         }
@@ -295,11 +259,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var warehouseOrderStatus: String? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:148:5
             return StringValue.optional(self.dataValue(for: WarehouseOrderType.warehouseOrderStatus))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:153:5
             self.setDataValue(for: WarehouseOrderType.warehouseOrderStatus, to: StringValue.of(optional: value))
         }
     }
@@ -309,7 +271,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:101:36
                 return WarehouseOrderType.warehouseOrderStatusName_
             }
         }
@@ -317,7 +278,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:101:36
                 WarehouseOrderType.warehouseOrderStatusName_ = value
             }
         }
@@ -325,11 +285,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var warehouseOrderStatusName: String? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:161:5
             return StringValue.optional(self.dataValue(for: WarehouseOrderType.warehouseOrderStatusName))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:166:5
             self.setDataValue(for: WarehouseOrderType.warehouseOrderStatusName, to: StringValue.of(optional: value))
         }
     }
@@ -339,7 +297,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:104:36
                 return WarehouseOrderType.whseOrderConfirmedDateTime_
             }
         }
@@ -347,7 +304,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:104:36
                 WarehouseOrderType.whseOrderConfirmedDateTime_ = value
             }
         }
@@ -355,11 +311,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var whseOrderConfirmedDateTime: GlobalDateTime? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:200:5
             return GlobalDateTime.castOptional(self.dataValue(for: WarehouseOrderType.whseOrderConfirmedDateTime))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:205:5
             self.setDataValue(for: WarehouseOrderType.whseOrderConfirmedDateTime, to: value)
         }
     }
@@ -369,7 +323,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:106:36
                 return WarehouseOrderType.whseOrderLatestStartDateTime_
             }
         }
@@ -377,7 +330,6 @@ open class WarehouseOrderType: EntityValue {
             objc_sync_enter(WarehouseOrderType.self)
             defer { objc_sync_exit(WarehouseOrderType.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:106:36
                 WarehouseOrderType.whseOrderLatestStartDateTime_ = value
             }
         }
@@ -385,11 +337,9 @@ open class WarehouseOrderType: EntityValue {
 
     open var whseOrderLatestStartDateTime: GlobalDateTime? {
         get {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:226:5
             return GlobalDateTime.castOptional(self.dataValue(for: WarehouseOrderType.whseOrderLatestStartDateTime))
         }
         set(value) {
-            //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:231:5
             self.setDataValue(for: WarehouseOrderType.whseOrderLatestStartDateTime, to: value)
         }
     }

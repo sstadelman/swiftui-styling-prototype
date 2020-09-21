@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import FioriSwiftUICore
 
-extension API_Warehouse_Task {
+extension API_Warehouse_TaskMetadata {
     static let serviceRoot = URL(string: "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_WAREHOUSE_ORDER_TASK")!
     static let serviceHeaders: [String: String] = ["APIKey": "9dljAX8fQRo016yWIwB1bCUHBaax2Ao4"]
 }

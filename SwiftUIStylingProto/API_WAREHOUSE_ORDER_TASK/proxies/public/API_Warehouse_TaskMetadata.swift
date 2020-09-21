@@ -1,7 +1,7 @@
-//# xsc 1.9.11.12
+//# xsc 20.3.0-6b3997-20200324
 
 import Foundation
-import cloud_sdk_ios_odata
+import SAPOData
 
 public class API_Warehouse_TaskMetadata {
     private static var document_: CSDLDocument = API_Warehouse_TaskMetadata.resolve()
@@ -13,7 +13,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1480:36
                 return API_Warehouse_TaskMetadata.document_
             }
         }
@@ -21,14 +20,12 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1480:36
                 API_Warehouse_TaskMetadata.document_ = value
             }
         }
     }
 
     private static func resolve() -> CSDLDocument {
-        //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1516:12
         try! API_Warehouse_TaskFactory.registerAll()
         API_Warehouse_TaskMetadataParser.parsed.hasGeneratedProxies = true
         return API_Warehouse_TaskMetadataParser.parsed
@@ -42,7 +39,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ComplexTypes.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ComplexTypes.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1486:40
                     return API_Warehouse_TaskMetadata.ComplexTypes.dummyFunctionImportResult_
                 }
             }
@@ -50,7 +46,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ComplexTypes.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ComplexTypes.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1486:40
                 API_Warehouse_TaskMetadata.ComplexTypes.dummyFunctionImportResult_ = value
             }
         }
@@ -69,7 +64,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.EntityTypes.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntityTypes.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1491:40
                     return API_Warehouse_TaskMetadata.EntityTypes.warehouseOrderType_
                 }
             }
@@ -77,7 +71,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.EntityTypes.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntityTypes.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1491:40
                 API_Warehouse_TaskMetadata.EntityTypes.warehouseOrderType_ = value
             }
         }
@@ -88,7 +81,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.EntityTypes.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntityTypes.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1492:40
                     return API_Warehouse_TaskMetadata.EntityTypes.warehouseTaskExceptionCodeType_
                 }
             }
@@ -96,7 +88,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.EntityTypes.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntityTypes.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1492:40
                 API_Warehouse_TaskMetadata.EntityTypes.warehouseTaskExceptionCodeType_ = value
             }
         }
@@ -107,7 +98,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.EntityTypes.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntityTypes.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1493:40
                     return API_Warehouse_TaskMetadata.EntityTypes.warehouseTaskType_
                 }
             }
@@ -115,7 +105,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.EntityTypes.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntityTypes.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1493:40
                 API_Warehouse_TaskMetadata.EntityTypes.warehouseTaskType_ = value
             }
         }
@@ -134,7 +123,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.EntitySets.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntitySets.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1498:40
                     return API_Warehouse_TaskMetadata.EntitySets.warehouseOrder_
                 }
             }
@@ -142,7 +130,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.EntitySets.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntitySets.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1498:40
                 API_Warehouse_TaskMetadata.EntitySets.warehouseOrder_ = value
             }
         }
@@ -153,7 +140,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.EntitySets.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntitySets.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1499:40
                     return API_Warehouse_TaskMetadata.EntitySets.warehouseTask_
                 }
             }
@@ -161,7 +147,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.EntitySets.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntitySets.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1499:40
                 API_Warehouse_TaskMetadata.EntitySets.warehouseTask_ = value
             }
         }
@@ -172,7 +157,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.EntitySets.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntitySets.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1500:40
                     return API_Warehouse_TaskMetadata.EntitySets.warehouseTaskExceptionCode_
                 }
             }
@@ -180,7 +164,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.EntitySets.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.EntitySets.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1500:40
                 API_Warehouse_TaskMetadata.EntitySets.warehouseTaskExceptionCode_ = value
             }
         }
@@ -207,7 +190,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1505:40
                     return API_Warehouse_TaskMetadata.ActionImports.assignWarehouseOrder_
                 }
             }
@@ -215,7 +197,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1505:40
                 API_Warehouse_TaskMetadata.ActionImports.assignWarehouseOrder_ = value
             }
         }
@@ -226,7 +207,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1506:40
                     return API_Warehouse_TaskMetadata.ActionImports.cancelWarehouseTask_
                 }
             }
@@ -234,7 +214,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1506:40
                 API_Warehouse_TaskMetadata.ActionImports.cancelWarehouseTask_ = value
             }
         }
@@ -245,7 +224,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1507:40
                     return API_Warehouse_TaskMetadata.ActionImports.confirmWarehouseTaskExact_
                 }
             }
@@ -253,7 +231,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1507:40
                 API_Warehouse_TaskMetadata.ActionImports.confirmWarehouseTaskExact_ = value
             }
         }
@@ -264,7 +241,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1508:40
                     return API_Warehouse_TaskMetadata.ActionImports.confirmWarehouseTaskHU_
                 }
             }
@@ -272,7 +248,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1508:40
                 API_Warehouse_TaskMetadata.ActionImports.confirmWarehouseTaskHU_ = value
             }
         }
@@ -283,7 +258,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1509:40
                     return API_Warehouse_TaskMetadata.ActionImports.confirmWarehouseTaskProduct_
                 }
             }
@@ -291,7 +265,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1509:40
                 API_Warehouse_TaskMetadata.ActionImports.confirmWarehouseTaskProduct_ = value
             }
         }
@@ -302,7 +275,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1510:40
                     return API_Warehouse_TaskMetadata.ActionImports.setInProcessWarehouseOrder_
                 }
             }
@@ -310,7 +282,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1510:40
                 API_Warehouse_TaskMetadata.ActionImports.setInProcessWarehouseOrder_ = value
             }
         }
@@ -321,7 +292,6 @@ public class API_Warehouse_TaskMetadata {
                 objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
                 defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
                 do {
-                    //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1511:40
                     return API_Warehouse_TaskMetadata.ActionImports.unassignWarehouseOrder_
                 }
             }
@@ -329,7 +299,6 @@ public class API_Warehouse_TaskMetadata {
             objc_sync_enter(API_Warehouse_TaskMetadata.ActionImports.self)
             defer { objc_sync_exit(API_Warehouse_TaskMetadata.ActionImports.self); }
             do {
-                //# /Users/i826181/github/sstadelman/swiftui-styling-prototype/SwiftUIStylingProto/API_WAREHOUSE_ORDER_TASK/proxy-API_WAREHOUSE_ORDER_TASK.xs:1511:40
                 API_Warehouse_TaskMetadata.ActionImports.unassignWarehouseOrder_ = value
             }
         }

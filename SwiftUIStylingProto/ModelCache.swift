@@ -8,7 +8,8 @@
 import SwiftUI
 import Combine
 import SAPFoundation
-import cloud_sdk_ios_odata
+import SAPOfflineOData
+import SAPOData
 
 final class ModelCache: ObservableObject {
     
@@ -65,30 +66,17 @@ extension EnvironmentValues {
     }
 }
 
-func bootstrapOnlineODataProvider() -> Future<OnlineODataProvider, Never> {
-    return Future { promise in
-        
-        DispatchQueue(label: UUID().uuidString).async {
-            let urlSession = SAPURLSession()
-            let provider = OnlineODataProvider(serviceName: "Hello World", serviceRoot: TripPin.serviceRoot, sapURLSession: urlSession)
-            let _ = DefaultContainer(provider: provider)
-            
-            return promise(.success(provider))
-        }
-    }
-}
-
 func bootstrapWarehouseTaskOnlineODataProvider() -> Future<OnlineODataProvider, Never> {
     return Future { promise in
-        
+
         let config = URLSessionConfiguration.default
-        config.httpAdditionalHeaders = API_Warehouse_Task.serviceHeaders
+        config.httpAdditionalHeaders = API_Warehouse_TaskMetadata.serviceHeaders
         let urlSession = SAPURLSession(configuration: config)
-        let provider = OnlineODataProvider(serviceName: "API_Warehouse_Task_ONL", serviceRoot: API_Warehouse_Task.serviceRoot, sapURLSession: urlSession)
+        let provider = OnlineODataProvider(serviceName: "API_Warehouse_Task_ONL", serviceRoot: API_Warehouse_TaskMetadata.serviceRoot, sapURLSession: urlSession)
         provider.serviceOptions.dataVersion = 2
         provider.serviceOptions.checkVersion = false
         let _ = API_Warehouse_Task(provider: provider)
-        
+
         return promise(.success(provider))
     }
 }
@@ -120,20 +108,20 @@ func bootstrapEquipmentOfflineODataProvider() -> Future<OfflineODataProvider, Er
 }
  */
 
-extension OfflineODataProvider {
-    func downloadPublisher(options: DownloadOptions = .none) -> Future<OfflineODataProvider, Error> {
-        return Future { promise in
-            DispatchQueue(label: UUID().uuidString).async {
-                do {
-                    try self.download(options: options)
-                    return promise(.success(self))
-                } catch {
-                    return promise(.failure(error))
-                }
-            }
-        }
-    }
-}
+//extension OfflineODataProvider {
+//    func downloadPublisher(options: DownloadOptions = .none) -> Future<OfflineODataProvider, Error> {
+//        return Future { promise in
+//            DispatchQueue(label: UUID().uuidString).async {
+//                do {
+//                    try self.download(options: options)
+//                    return promise(.success(self))
+//                } catch {
+//                    return promise(.failure(error))
+//                }
+//            }
+//        }
+//    }
+//}
 
 func dbURL() -> URL {
    guard let documentsFolderURL = Foundation.FileManager.default.urls(for: Foundation.FileManager.SearchPathDirectory.documentDirectory, in: Foundation.FileManager.SearchPathDomainMask.userDomainMask).first else {

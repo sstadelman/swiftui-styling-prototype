@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import cloud_sdk_ios_odata
 import SAPFoundation
 
 @main
