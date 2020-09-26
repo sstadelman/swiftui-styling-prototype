@@ -35,6 +35,8 @@
 		1BF1040C2519135600F2912C /* SAPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF104092519134200F2912C /* SAPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BF1040D2519135600F2912C /* SAPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF1040A2519134400F2912C /* SAPFoundation.xcframework */; };
 		1BF1040E2519135600F2912C /* SAPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF1040A2519134400F2912C /* SAPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6A23F6D25193D9B00B018C2 /* WarehouseOrderType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F6C25193D9B00B018C2 /* WarehouseOrderType+Extensions.swift */; };
+		F6A6D496251EA6C50085AE85 /* ODataDataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6D495251EA6C50085AE85 /* ODataDataValue.swift */; };
 		F6B9F902250C4151002C8B6A /* SwiftUIStylingProtoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F901250C4151002C8B6A /* SwiftUIStylingProtoApp.swift */; };
 		F6B9F904250C4151002C8B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9F903250C4151002C8B6A /* ContentView.swift */; };
 		F6B9F906250C4151002C8B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B9F905250C4151002C8B6A /* Assets.xcassets */; };
@@ -67,8 +69,8 @@
 		1B02434725131BBE00C57865 /* API_Warehouse_Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API_Warehouse_Task+Extensions.swift"; sourceTree = "<group>"; };
 		1B02434925131D3A00C57865 /* WarehouseTaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseTaskList.swift; sourceTree = "<group>"; };
 		1BA449B0250FE71100B61EB1 /* ModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCache.swift; sourceTree = "<group>"; };
-		1BF103DD2518702400F2912C /* SAPOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPOData.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPOData.xcframework"; sourceTree = "<group>"; };
-		1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPOfflineOData.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPOfflineOData.xcframework"; sourceTree = "<group>"; };
+		1BF103DD2518702400F2912C /* SAPOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPOData.xcframework; path = "Release-xcframework/SAPOData.xcframework"; sourceTree = "<group>"; };
+		1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPOfflineOData.xcframework; path = "Release-xcframework/SAPOfflineOData.xcframework"; sourceTree = "<group>"; };
 		1BF103E42518712300F2912C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1BF103E62518712C00F2912C /* PlanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItem.swift; sourceTree = "<group>"; };
 		1BF103E82518713500F2912C /* TripPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPin.swift; sourceTree = "<group>"; };
@@ -84,8 +86,10 @@
 		1BF103F62519102200F2912C /* WarehouseTaskType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseTaskType.swift; sourceTree = "<group>"; };
 		1BF103F72519102200F2912C /* WarehouseTaskExceptionCodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseTaskExceptionCodeType.swift; sourceTree = "<group>"; };
 		1BF104032519115E00F2912C /* QueryResultPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryResultPublisher.swift; sourceTree = "<group>"; };
-		1BF104092519134200F2912C /* SAPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPCommon.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPCommon.xcframework"; sourceTree = "<group>"; };
-		1BF1040A2519134400F2912C /* SAPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPFoundation.xcframework; path = "../../../xcframeworks/Release-xcframework/SAPFoundation.xcframework"; sourceTree = "<group>"; };
+		1BF104092519134200F2912C /* SAPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPCommon.xcframework; path = "Release-xcframework/SAPCommon.xcframework"; sourceTree = "<group>"; };
+		1BF1040A2519134400F2912C /* SAPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAPFoundation.xcframework; path = "Release-xcframework/SAPFoundation.xcframework"; sourceTree = "<group>"; };
+		F6A23F6C25193D9B00B018C2 /* WarehouseOrderType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WarehouseOrderType+Extensions.swift"; sourceTree = "<group>"; };
+		F6A6D495251EA6C50085AE85 /* ODataDataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODataDataValue.swift; sourceTree = "<group>"; };
 		F6B9F8FE250C4151002C8B6A /* SwiftUIStylingProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStylingProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B9F901250C4151002C8B6A /* SwiftUIStylingProtoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStylingProtoApp.swift; sourceTree = "<group>"; };
 		F6B9F903250C4151002C8B6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			children = (
 				1BF103EA2519102200F2912C /* proxies */,
 				1B02434725131BBE00C57865 /* API_Warehouse_Task+Extensions.swift */,
+				F6A23F6C25193D9B00B018C2 /* WarehouseOrderType+Extensions.swift */,
 			);
 			path = API_WAREHOUSE_ORDER_TASK;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				1BF104032519115E00F2912C /* QueryResultPublisher.swift */,
+				F6A6D495251EA6C50085AE85 /* ODataDataValue.swift */,
 				1BF103E32518710E00F2912C /* TripPinSampleData */,
 				1B02432725131B7800C57865 /* API_WAREHOUSE_ORDER_TASK */,
 				F6B9F924250C45A2002C8B6A /* CustomerModifiers */,
@@ -221,7 +227,8 @@
 				1BF103DE2518702400F2912C /* SAPOfflineOData.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
+			path = /Users/stan/github/sstadelman/xcframeworks;
+			sourceTree = "<absolute>";
 		};
 		F6B9F924250C45A2002C8B6A /* CustomerModifiers */ = {
 			isa = PBXGroup;
@@ -310,6 +317,8 @@
 			files = (
 				1BF103FF2519102200F2912C /* WarehouseOrderType.swift in Sources */,
 				1BF104002519102200F2912C /* DummyFunctionImportResult.swift in Sources */,
+				F6A23F6D25193D9B00B018C2 /* WarehouseOrderType+Extensions.swift in Sources */,
+				F6A6D496251EA6C50085AE85 /* ODataDataValue.swift in Sources */,
 				1BF103F92519102200F2912C /* API_Warehouse_TaskFactory.swift in Sources */,
 				F6B9F923250C4569002C8B6A /* ContactList.swift in Sources */,
 				1BF104022519102200F2912C /* WarehouseTaskExceptionCodeType.swift in Sources */,

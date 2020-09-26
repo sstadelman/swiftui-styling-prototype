@@ -10,6 +10,7 @@ import Combine
 import SAPFoundation
 import SAPOfflineOData
 import SAPOData
+import ObservableArray
 
 final class ModelCache: ObservableObject {
     
@@ -50,6 +51,7 @@ final class ModelCache: ObservableObject {
     static let shared = ModelCache()
     @Published var isReady: Bool = false
     @Published var warehouseTask: [WarehouseTaskType] = []
+    @Published var warehouseOrder: [WarehouseOrderType] = []
     private var subscriptions = Set<AnyCancellable>()
 
 }

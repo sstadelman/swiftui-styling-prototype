@@ -17,16 +17,16 @@ struct WarehouseTaskList: View {
     
     init() {
         let query = DataQuery()
-            .from(API_Warehouse_TaskMetadata.EntitySets.warehouseTask)
-            .selectAll()
+            .from(API_Warehouse_TaskMetadata.EntitySets.warehouseOrder)
+            .expand(WarehouseOrderType.toWarehouseTask)
         
         modelCache.provider.resultPublisher(for: query)
             .receive(on: RunLoop.main)
-            .tryMap({ try WarehouseTaskType.array(from: $0.entityList()) })
+            .tryMap({ try WarehouseOrderType.array(from: $0.entityList()) })
             .sink { (completion) in
                 print(completion)
             } receiveValue: { [self] entities in
-                modelCache.warehouseTask = entities
+                modelCache.warehouseOrder = entities
             }
             .store(in: &subscriptions)
     }
@@ -36,28 +36,16 @@ struct WarehouseTaskList: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(0..<modelCache.warehouseTask.count) { idx in
-                    let task = modelCache.warehouseTask[idx]
+                ForEach(0..<modelCache.warehouseOrder.count) { idx in
+                    let warehouseOrder = modelCache.warehouseOrder[idx]
                     NavigationLink(destination: PersonFloorplan(header: {
                         EmptyView()
                     }, content: {
-                        ScrollView {
-                            LazyVGrid(columns: [GridItem(.adaptive(minimum: 108, maximum: 145))], pinnedViews: [.sectionHeaders]) {
-                                ForEach(0..<3){ section in
-                                    Section(header: SectionHeader(title: "Hello, world", action: SectionActionButton(title: "See all"))) {
-                                        ForEach(0..<30) { item in
-                                            CollectionItem(detailImage: Image(systemName: "mail"), title: "Hello, world", subtitle: "Foo bar")
-                                                .detailImageModifier(({ $0.modifier(PickPutawayIcon(task: task)) }))
-                                                .id(section * 30 + item)
-                                        }
-                                    }
-                                }
-                                .titleStyle(TextStyle(font: .body).bold())
-                            }
-                        }
+                        warehouseOrder.taskGridView
                     })) {
-                        ContactItem(model: task)
-                            .detailImageModifier({ $0.modifier(PickPutawayIcon(task: task)) })
+                        ObjectItem(model: warehouseOrder)
+                            .footnoteModifier({ $0.modifier(WarehouseOrderTaskTags(order: warehouseOrder)) })
+//                            .detailImageModifier({ $0.modifier(PickPutawayIcon(task: warehouseOrder)) })
                     }
                     .padding()
                     .buttonStyle(PlainButtonStyle())

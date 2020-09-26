@@ -20,6 +20,8 @@ extension WarehouseTaskType: Identifiable {
     }
 }
 
+extension WarehouseTaskType: CollectionItemModel {}
+extension WarehouseTaskType: ObjectItemModel {}
 
 extension WarehouseTaskType: ContactItemModel {
     public var title: String {
@@ -49,6 +51,18 @@ extension WarehouseTaskType: ContactItemModel {
         guard let processType = warehouseProcessType,
               let process = ProcessType(rawValue: processType) else { return nil }
         return Image(systemName: process.systemIcon).renderingMode(.template)
+    }
+}
+
+extension WarehouseTaskType: StatusComponent {
+    public var status: String? {
+        return warehouseTaskStatusName
+    }
+}
+
+extension WarehouseTaskType: SubstatusComponent {
+    public var substatus: String? {
+        return stockTypeName
     }
 }
 
