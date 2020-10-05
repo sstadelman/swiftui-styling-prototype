@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(
-                destination: ContactList()) {
+                    destination: ContactList()) {
                     Text("Contact List")
                 }
 //                NavigationLink(
@@ -30,11 +30,36 @@ struct ContentView: View {
             .listStyle(SidebarListStyle())
         }
         .modifier(AcmeBrandStyle())
+        .titleStyleClassPath(["purple"])
+        .subtitleStyleClassPath(["menlo"])
+    }
+    
+    init() {
+        do {
+            try StyleCache.upsertStyles([
+                "purple": AnyViewModifier(transform: {$0.modifier(PurpleText())}),
+                "menlo": AnyViewModifier(transform: {$0.modifier(MenloText())})
+            ])
+        } catch {
+            print(error)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+private struct PurpleText: ViewModifier {
+    func body(content: Content) -> some View {
+        content.foregroundColor(.purple)
+    }
+}
+
+private struct MenloText: ViewModifier {
+    func body(content: Content) -> some View {
+        content.font(.custom("Menlo", size: 18, relativeTo: .body))
     }
 }
